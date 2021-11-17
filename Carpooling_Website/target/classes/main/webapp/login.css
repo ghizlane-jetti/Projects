@@ -1,0 +1,150 @@
+@charset "ISO-8859-1";
+
+img {
+	vertical-align: middle;
+	border-style: none;
+	width: 150px;
+	height: 150px;
+	left: 4%;
+}
+
+*, ::after, ::before {
+	box-sizing: border-box;
+}
+
+.form-container {
+	padding: 156px;
+}
+
+.container {
+	max-width: 976px;
+}
+
+.fond #droite {
+	width: 1000px;
+	height: 100px;
+	right: 0px;
+}
+
+.col-sm-3 {
+	-ms-flex: 0 0 25%;
+	flex: 16 0 38%;
+	max-width: 25%;
+	max-height: none;
+}
+
+.col-sm-3 p {
+	text-align: center;
+	color: #eee;
+	font-size: 20px;
+	font-style: gras;
+	margin-top: 178px;
+	margin-bottom: -11rem;
+}
+
+.col-sm-3 h1 {
+	text-align: center;
+	color: #eee;
+	font-size: 20px;
+	font-style: gras;
+	margin-top: 220px;
+	margin-bottom: -13rem;
+}
+
+.col-sm-3 img {
+	height: 150px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 150px;
+	background-position: right top;
+	transform: translate(7%, 136%);
+}
+
+}
+.zoom b {
+	position: absolute;
+	top: 17%;
+	left: 2.3%;
+	transform: translate(-20%, -50%);
+	font-size: 15px;
+	font-weight: bold;
+	font-family: Verdana;
+	color: DodgerBlue;
+	font-style: gras;
+}
+
+.form-container h1 {
+	position: auto;
+	text-align: center;
+	font-size: 50px;
+	font-weight: bold;
+	font-family: Verdana;
+	color: DodgerBlue;
+	font-style: gras;
+}
+
+commanbutton {
+	border-radius: 20px;
+	border: 1px solid #1e90ff;
+	background-color: #1e90ff;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 30px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+
+button:active {
+	transform: scale(0.95);
+}
+
+button:focus {
+	outline: none;
+}
+
+form {
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 100%;
+	text-align: center;
+}
+
+input {
+    background-color: #eee;
+    border: none;
+    padding: 9px 15px;
+    margin: 9px 0;
+    width: 73%;
+}
+input[type="submit"] {
+  margin-top: 28px;
+  width: 220px;
+  height: 32px;
+  background: #1E90FF;
+  border: none;
+  border-radius: 2px;
+  color:White;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: 0.1s ease;
+  cursor: pointer;
+}
+.form-container #forgot {
+	margin: 0.9em 0 0;
+	text-decoration: none;
+	color: DodgerBlue;
+}
+
+.form-container #sign {
+	margin: 0.9em 0 0;
+	text-decoration: none;
+	color: DodgerBlue;
+}

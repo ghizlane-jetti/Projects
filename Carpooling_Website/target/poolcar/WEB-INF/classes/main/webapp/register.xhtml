@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core">
+
+<h:head>
+    <title>Registration Page</title>
+</h:head>
+<h:body>
+    <f:view>
+        <h:form id="registerForm">
+            <table>
+                <tr>
+                    <td><h:outputText value="Enter Your username:" /></td>
+                    <td><h:inputText id="username" value="#{user.username}"
+                            required="true" requiredMessage="Please enter your username" /></td>
+                    <td><h:message for="username" style="color:red" /></td>
+                </tr>
+                <tr>
+                    <td><h:outputText value="Enter Your email ID:" /></td>
+                    <td><h:inputText id="email" value="#{user.email}"
+                            required="true" requiredMessage="Please enter your email id" /></td>
+                    <td><h:message for="email" style="color:red" /></td>
+                </tr>
+                <tr>
+                    <td><h:outputText value="Enter Your password:" /></td>
+                    <td><h:inputSecret id="psw1" value="#{user.password1}"
+                            required="true" requiredMessage="Please enter your password" /></td>
+                    <td><h:message for="psw1" style="color:red" /></td>
+                </tr>
+                <tr>
+                    <td><h:outputText value="Retype Your password:" /></td>
+                    <td><h:inputSecret id="psw2" value="#{user.password2}"
+                            required="true" requiredMessage="Please retype your password" /></td>
+                    <td><h:message for="" style="color:red" /></td>
+                </tr>
+                <tr>
+                    <td><h:outputText value="Enter your phone:" /></td>
+                    <td><h:inputText id="phone" value="#{user.phone}"
+                            required="true" requiredMessage="Please enter your phone" /></td>
+                    <td><h:message for="phone" style="color:red" /></td>
+                </tr>
+                <tr>
+                    <td><h:outputText value="Enter Your gender:" /></td>
+                    <td><h:inputText id="gender" value="#{user.gender}"
+                            required="true" requiredMessage="Please enter your gender" /></td>
+                    <td><h:message for="gender" style="color:red" /></td>
+                </tr>
+                
+                <tr>
+                    <td />
+                    <td><h:commandButton value="Register" action="#{user.add}" /></td>
+                </tr>
+                <tr>
+                    <td><h:outputLink value="home.xhtml">Home</h:outputLink></td>
+                </tr>
+            </table>
+        </h:form>
+    </f:view>
+</h:body>
+</html>

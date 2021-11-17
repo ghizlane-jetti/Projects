@@ -1,0 +1,30 @@
+@charset "ISO-8859-1";
+img {
+	vertical-align: middle;
+	border-style: none;
+	width: 150px;
+	height: 150px;
+	left: 4%;
+}
+p {
+   
+    text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: Verdana;
+	
+	font-style: gras;
+	margin-left: 212px;
+    
+}
+a {
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: Verdana;
+	color: DodgerBlue;
+	font-style: gras;
+	margin-left: 670px;
+	margin-top: 110px;
+    
+}

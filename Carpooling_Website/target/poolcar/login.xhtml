@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="login.css"/>
+</h:head> 
+<body> 
+
+  <div class="row">
+    <div class="col-sm-9">
+     <img id ="gauche" src="log.png"  />
+    
+  
+      <div class="form-container">
+      <f:view>
+		<h:form >
+			<h1>Weslni</h1>
+			<table>
+         
+                <tr>
+                    <td><h:outputText value="E-mail:" /></td>
+                    <td><h:inputText id="email" value="#{login.email}"
+                            required="true" requiredMessage="Please enter your E-mail " /></td>
+                    <td><h:message for="email" style="color:red" /></td>
+                </tr>
+                <tr>
+                    <td><h:outputText value="password"/></td>
+                    <td><h:inputSecret id="password1" value="#{login.password1}"
+                            required="true" requiredMessage="Please enter your password" /></td>
+                    <td><h:message for="password1" style="color:red" /></td>
+                </tr>
+              
+                
+                
+                <tr>
+                    <td />
+                    <td><h:commandButton value="login" action="#{login.checkValidUser}" /></td>
+                </tr>
+     
+ 
+   
+	</table>
+			
+			<a href="#" id="forgot">Forgot Password?</a>
+			<a href="Sign_Up.xhtml" id="sign">Don't Have an Account?</a>
+			
+		</h:form>
+		</f:view>
+</div>
+    </div>
+    <div class="col-sm-3" style="background-color:DodgerBlue;">
+    
+    <p>Let's Adventure</p>
+     <p> Enjoy Time Travel</p>
+     <p>It's a great Experience</p>
+     <img id ="gauche" src="log.png"  />
+     
+     <h1>Let's try something new with </h1>
+     <h1>Weslni</h1>
+     
+      
+    </div>
+  </div>
+
+
+</body>
+</html>
+

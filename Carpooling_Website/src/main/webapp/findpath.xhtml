@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"> 
+
+<h:head>
+<title>Find path</title>
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="add.css"/>
+   
+</h:head> 
+<h:body> 
+<div class="row">
+
+    <div class="col-sm-12">
+  
+    <div class="scrollmenu">
+    <img id ="gauche" src="log.png"  />
+    <a href="home.xhtml"><i class="fa fa-home"></i> Home</a>
+    <a href="#"><i class="fa fa-search"></i> Search</a>
+    <a href="findpath.xhtml"><i class="fa fa-car"></i> Find Path</a>
+    <a href="addpath.xhtml"><i class="fa fa-calendar"></i> Add Path</a>
+    
+   <a href="#"><i class="fa fa-question"></i> Help</a> 
+    <a href="#"><i class="fa fa-user	"></i> #{login.username}</a> 
+  
+</div>
+
+    </div>
+        <b>Find Path</b>
+    <div class="form-container">
+    <div class="col-sm-6" style="left:400px ">
+    <f:view>
+    <h:form>
+    <p:dataTable var="data" value="#{dataAction.reservation}" scrollable="true" scrollHeight="500">
+        <p:column headerText="Location" >
+            <h:outputText value="#{data.fromm}" />
+        </p:column>
+        <p:column headerText="Destination" >
+            <h:outputText value="#{data.too}" />
+        </p:column>
+        <p:column headerText="Date" >
+            <h:outputText value="#{data.datee}" />
+        </p:column>
+        
+    </p:dataTable>
+    
+    </h:form>
+    </f:view>
+    </div>
+     </div>
+    
+</div>
+
+</h:body> 
+</html>

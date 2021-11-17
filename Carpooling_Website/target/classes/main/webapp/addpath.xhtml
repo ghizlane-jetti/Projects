@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"> 
+
+<h:head>
+<title>Add path</title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="add.css"/>
+   
+</h:head> 
+<h:body> 
+<div class="row">
+
+    <div class="col-sm-12">
+  
+    <div class="scrollmenu">
+    <img id ="gauche" src="log.png"  />
+    <a href="home.xhtml"><i class="fa fa-home"></i> Home</a>
+    <a href="#"><i class="fa fa-search"></i> Search</a>
+    <a href="findpath.xhtml"><i class="fa fa-car"></i> Find Path</a>
+    <a href="addpath.xhtml"><i class="fa fa-calendar"></i> Add Path</a>
+    
+   <a href="#"><i class="fa fa-question"></i> Help</a> 
+    <a href="#"><i class="fa fa-user	"></i> #{login.username}</a> 
+  
+</div>
+
+    </div>
+    <b>Add Path</b>
+    <div class="form-container">
+    <f:view>
+        <h:form id="registerForm">
+  <table> 
+         <tr>
+                    <td>
+                    <p>Location</p></td>
+                    <td><h:inputText id="fromm"   value="#{addpath.fromm}"   
+                            required="true" requiredMessage="Please enter your location" /></td>
+                    <td><h:message for="fromm" style="color:red" /></td>
+         
+                    <td> <p>Destination</p></td>
+                    <td><h:inputText id="too"   value="#{addpath.too}"   
+                            required="true" requiredMessage="Please enter your Destination" /></td>
+                    <td><h:message for="too" style="color:red" /></td>
+                </tr>
+                
+                <tr>
+                   <td> <p>Date</p></td>
+                 <td> <p:datePicker  id="datee" style="; border-style: none;" class="ui-inputfield" value="#{addpath.datee}"
+                  required="true" requiredMessage="Please enter Date"/></td>
+                   <td><h:message for="heure" style="color:red" /></td>
+                
+                    <td><p>Time</p></td>
+                    <td> <p:datePicker id="heure"  style="background-color: white; border-style: none;" class="ui-inputfield1" value="#{addpath.heure}" timeOnly="true" pattern="HH:mm"
+                    required="true" requiredMessage="Please enter Time" /></td>
+                    <td><h:message for="heure" style="color:red" /></td>
+                </tr>
+                <tr>
+                    <td><p>Price</p></td>
+                    <td><h:inputText id="price" value="#{addpath.price}" 
+                            required="true" requiredMessage="Please enter your price" /></td>
+                    <td><h:message for="price" style="color:red" /></td>
+                </tr>
+               
+                <tr>
+                    <td />
+                    <td><h:commandButton style="background-color: dodgerblue; color: white; width: 67%;" value="Add" action="#{addpath.add}"  /></td>
+                </tr>
+     
+ 
+   
+	</table>
+	</h:form>
+    </f:view>
+    
+    </div>
+        
+    
+</div>
+
+</h:body> 
+</html>

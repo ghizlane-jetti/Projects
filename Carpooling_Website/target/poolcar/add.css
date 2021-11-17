@@ -1,0 +1,120 @@
+@charset "ISO-8859-1";
+
+p {
+    margin-top: 47px;
+    margin-bottom: -4rem;
+    margin-left: 78px;
+    font-size: 21px;
+    left: -52px;
+    color: black;
+}
+.scrollmenu img {
+    width: 70px;
+    height: 70px;
+    left: 0%;
+    transform: translate(2px, 0px);
+
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+    width: 700px;
+    height: 700px;
+    transform: translate(250px, 10px);
+    
+}
+.col-sm-12 {
+  background-color: DodgerBlue;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu a{
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+   margin-left: 6%;
+  margin-right: 1%;
+}
+
+div.scrollmenu a:hover {
+  background-color: #777;
+}
+input {
+background-color: #eee;
+    border: none;
+    padding: 8px 20px;
+    margin: -1px 0;
+    width: 101%;
+    margin: 124px 43px;
+    margin: -41px 21px;
+    margin-top: 93px;
+    margin-left:3px;
+}
+b{
+	font-family:Monotype Corsiva;
+    font-weight: bolder;
+    margin-top: 25px;
+    margin-left: 84px;
+    color: dodgerblue;
+    font-size: 40px;
+}
+
+.ui-inputfield{
+	background-color: rgb(238, 238, 238);
+    width: 101%;
+    font-weight: normal;
+    top: 55px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    margin: 0px;
+    outline: none medium;
+    padding: 4px;
+}
+.ui-inputfield1{
+	background-color: rgb(238, 238, 238);
+    width: 101%;
+    font-weight: normal;
+    top: 55px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    margin: 0px;
+    outline: none medium;
+    padding: 4px;
+}
+
+.col-sm-3 img {
+	height: 593px;
+    width: 320px;
+    right: -31px;
+    margin-left: -46%;
+}
+button {
+	border-radius: 20px;
+	border: 1px solid #1e90ff;
+	background-color: #1e90ff;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 30px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+	text-align:center;
+	position:relative;
+left:7%;
+top:20%;
+}
+
+button:active {
+	transform: scale(0.95);
+}
+
+button:focus {
+	outline: none;}
